@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="/static/styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<div style="padding-top: 22%;padding-left: 10%;height: 100px;width: 100px;">
+   <div style="background-color: beige;" class="weapons1">
+      {% if x==0 %}
+      <button name="button_value" value="0" method="post">
+         <i class="far fa-hand-rock"></i>
+      </button>
+      {% endif %}
+      {% if x==1 %}
+      <button name="button_value" value="1">
+         <i class="far fa-hand-paper"></i>
+      </button>
+      {% endif %}
+      {% if x==2 %}
+      <button name="button_value" value="2">
+         <i class="far fa-hand-scissors"></i>
+      </button>
+      {% endif %}
+   </div>
+</div>
+
+<div style="padding-left: 85%;padding-top: -100px;">
+   <div style="background-color: beige;" class="weapons1">
+      {% if y==0 %}
+      <button name="button_value" value="0" method="post">
+         <i class="far fa-hand-rock"></i>
+      </button>
+      {% endif %}
+      {% if y==1 %}
+      <button name="button_value" value="1">
+         <i class="far fa-hand-paper"></i>
+      </button>
+      {% endif %}
+      {% if y==2 %}
+      <button name="button_value" value="2">
+         <i class="far fa-hand-scissors"></i>
+      </button>
+      {% endif %}
+   </div>
+</div>
+<div class="container">
+        {% if x==0 %}
+        
+        <div class="weapons">  
+           <h2>You Choose Rock</h2>
+        </div>
+        {% endif %}
+        {% if x==1 %}
+        
+        <div class="weapons">  
+           <h2>You Choose Paper</h2>
+        </div>
+        {% endif %}
+        {% if x==2 %}
+        
+        <div class="weapons">  
+           <h2>You Choose Scissor</h2>
+        </div>
+        {% endif %}
+    
+        {% if y==0 %}
+        
+        <div class="weapons">  
+           <h2>Computer Choose Rock</h2>
+        </div>
+        {% endif %}
+        {% if y==1 %}
+        
+        <div class="weapons">  
+           <h2>Computer Choose Paper</h2>
+        </div>
+        {% endif %}
+        {% if y==2 %}
+        
+        <div class="weapons">  
+           <h2>Computer Choose Scissor</h2>
+        </div>
+        {% endif %}
+    <div class="weapons">
+        <h1> Ohhh no the game is Tie !!!!!
+        </h1>
+    </div>
+</div>
